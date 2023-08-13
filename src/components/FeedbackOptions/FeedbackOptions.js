@@ -1,8 +1,9 @@
-import { Button } from './FeedBackButton';
+import { Button } from '../FeedbackButton/FeedBackButton';
+import { List } from './FeedbackOptions.styled';
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
-    <>
+    <List>
       {options.map((option, index) => (
         <Button
           key={index}
@@ -10,6 +11,6 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
           name={option.charAt(0).toUpperCase() + option.slice(1)}
         />
       ))}
-    </>
+    </List>
   );
 };

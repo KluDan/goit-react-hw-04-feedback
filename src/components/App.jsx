@@ -1,6 +1,6 @@
 import { GlobalStyle } from './GlobalStyle';
 import { Component } from 'react';
-import { Section } from './Section';
+import { Section } from './Section/Section';
 
 export class App extends Component {
   state = {
